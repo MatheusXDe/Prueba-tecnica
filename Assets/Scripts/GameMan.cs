@@ -37,4 +37,9 @@ public class GameMan : MonoBehaviour
         info.text = "Active Balls: " + currentBalls+ "<br>MaxBalls: " + SpawnSystem.Call.maxBalls + "<br>" +
             "Spawn Ball Cooldown " + cooldown.ToString("0.00");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
